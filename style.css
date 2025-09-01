@@ -1,24 +1,43 @@
 /* Global */
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header, nav, main, footer { padding: 1rem; }
-nav li {padding: 0 10px; list-style: none;}
-nav li + li {border-left: 1px solid #ccc;}
+body { 
+    font-family: Arial, sans-serif; margin: 0; padding: 0; 
+}
 
+header, nav, main, footer { 
+    padding: 1rem; 
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    li + li {border-left: 1px solid black;}
+}
 
 /* Medium screens */
 @media only screen and (min-width: 600px) {
- nav ul { display: flex; gap: 1rem; }
- main {background: yellow;}
+ nav ul {
+     display: flex; gap: 1rem; 
+    }
+ main {
+    background: yellow;}
 }
 
 /* Large screens */
 @media only screen and (min-width: 900px) {
- body { max-width: 900px; margin: auto; }
- h1 { font-size: 3rem; }
-  main {background: blue;}
+ body { 
+    max-width: 900px; margin: auto; 
+}
+ h1 { 
+    font-size: 3rem; 
+}
+  main {
+    background: blue;}
 }
 
 /* Extra large */
 @media only screen and (min-width: 1200px) {
-  main {background: red;}
+  main {
+    background: red;}
 }
